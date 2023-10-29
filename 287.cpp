@@ -1,12 +1,12 @@
 #include<iostream>
 #include<vector>
-#include<set>
+#include<unordered_set>
 
 using namespace std;
 
 int findDuplicate(vector<int> & nums)
 {
-	set<int> num;
+	unordered_set<int> num;
 	for (int i : nums) {
 		if (num.find(i) != num.end()) {
 			return i;

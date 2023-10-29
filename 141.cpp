@@ -1,5 +1,8 @@
 #include<iostream>
 #include<vector>
+#include<unordered_set>
+using namespace std;
+
 struct ListNode {
 	int val;
 	ListNode* next;
@@ -18,5 +21,20 @@ bool hasCycle(ListNode* head, int pos)
 		}
 	} while (ptr1 != ptr2);
 	return true;
+}
+
+bool hasCycle(ListNode* head)
+{
+	unordered_set<ListNode*> set;
+	while (head != nullptr) {
+		if (!set.count(head)) {
+			set.insert(head);
+		}
+		else {
+			return true;
+		}
+		head = head->next;
+	}
+	return false;
 }
 
