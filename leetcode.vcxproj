@@ -126,13 +126,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="141.cpp" />
-    <ClCompile Include="287.cpp" />
-    <ClCompile Include="5.cpp" />
-    <ClCompile Include="664.cpp" />
-    <ClCompile Include="42.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

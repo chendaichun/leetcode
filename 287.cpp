@@ -13,6 +13,7 @@ int findDuplicate(vector<int> & nums)
 		}
 		else num.insert(i);
 	}
+	return 0;
 }
 int findDuplicate1(vector<int>& nums)
 {
